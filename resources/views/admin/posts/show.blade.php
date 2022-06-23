@@ -9,6 +9,7 @@
     <h1 class="mb-4">
         {{$post->title}}
     </h1>
+    <h4 class="text-primary"> Category: {{$post->category ? $post->category->name :'Uncategorized'}}</h4>
 
     <div class="content mb-4">
         {{$post->content}}

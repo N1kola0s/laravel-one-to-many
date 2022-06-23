@@ -31,9 +31,11 @@
             <tr class="text-center">
                 <th>ID</th>
                 <th>Titolo</th>
+                <th>Categoria</th>
                 <th>Slug</th>
                 <th>Immagine</th>
                 <th>Azioni</th>
+                
             </tr>
 
         </thead>
@@ -48,6 +50,10 @@
 
                 <td>
                     {{$post->title}}
+                </td>
+
+                <td>
+                    {{$post->category ? $post->category->name :'Uncategorized'}}
                 </td>
 
                 <td>

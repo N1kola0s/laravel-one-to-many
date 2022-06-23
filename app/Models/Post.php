@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Post extends Model
 {
-    protected $fillable = ['title', 'content', 'slug', 'cover'];
+    protected $fillable = ['title', 'content', 'slug', 'cover', 'category_id'];
 
     /* Creiamo una relazione one to many
 
