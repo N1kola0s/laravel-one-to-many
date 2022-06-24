@@ -17,11 +17,7 @@
         
     </div>
 
-    @if (session('message'))
-    <div class="alert alert-success">
-        {{ session('message') }}
-    </div>
-    @endif
+    @include('partials.sessions')
 
 
     <table class="table table-striped table-inverse table-responsive">

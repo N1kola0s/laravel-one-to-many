@@ -25,8 +25,12 @@ Auth::routes();
 Route::middleware('auth')->namespace('Admin')->name('admin.')->prefix('admin')->group(function(){
     /* Admin dashboard */
     Route::get('/', 'HomeController@index')->name('dashboard');
+
     /* Admin posts */
     Route::resource('posts', 'PostController');
+
+     /* Admin categories */
+    Route::resource('categories', 'CategoryController')->except(['show','create','edit']);
 });
 
 
